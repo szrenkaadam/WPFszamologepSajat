@@ -113,7 +113,43 @@ namespace szamologepOtthoni
 
                 output = "";
                 operation = "Clear";
+
+                double outputTemp = 0;
+                OutputText.Content = outputTemp;
+                
             }
+        }
+
+        private void DivideBtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (output != "")
+            {
+                temp = double.Parse(output);
+
+                output = "";
+                operation = "Divide";
+            }
+        }
+
+        private void MultiplyBtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (output != "")
+            {
+                temp = double.Parse(output);
+
+                output = "";
+                operation = "Multiply";
+            }
+        }
+
+        private void PwBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RootBtn_Click(object sender, RoutedEventArgs e)
+        {
+
         }
 
         private void EqualsBtn_Click(object sender, RoutedEventArgs e)
@@ -126,20 +162,25 @@ namespace szamologepOtthoni
                     OutputText.Content = outputTemp;
                     break;
                 case "Plus":
-                     outputTemp = temp + double.Parse(output);
+                    outputTemp = temp + double.Parse(output);
                     OutputText.Content = outputTemp;
                     break;
-                case "Clear":
-                    outputTemp = 0;
+
+                case "Divide":
+                    outputTemp = temp / double.Parse(output);
                     OutputText.Content = outputTemp;
                     break;
+                case "Multiply":
+                    outputTemp = temp * double.Parse(output);
+                    OutputText.Content = outputTemp;
+                    break;
+
 
 
             }
         }
 
-       
+        
     }
-    
+
 }
-    

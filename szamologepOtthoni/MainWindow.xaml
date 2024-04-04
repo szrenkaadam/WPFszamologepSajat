@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:szamologepOtthoni"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="350">
-    <Grid Margin="10">
+    <Grid Margin="5">
 
         <Grid.RowDefinitions>
             <!--Output-->
@@ -32,7 +32,7 @@
                 Content="7" 
                 FontSize="22" 
                 FontWeight="Bold" 
-                Click="NumBtn_Click" />
+                Click="NumBtn_Click"  Background="#FFE0C1FF"/>
 
         <Button x:Name="EightBtn"
         Grid.Column="1"
@@ -40,7 +40,7 @@
         Content="8" 
         FontSize="22" 
         FontWeight="Bold" 
-        Click="NumBtn_Click"/>
+        Click="NumBtn_Click"  Background="#FFE0C1FF"/>
 
         <Button x:Name="NineBtn"
         Grid.Row="1"
@@ -48,7 +48,7 @@
         Content="9" 
         FontSize="22" 
         FontWeight="Bold" 
-        Click="NumBtn_Click"/>
+        Click="NumBtn_Click" Background="#FFE0C1FF"/>
 
 
         <Button x:Name="FourBtn"
@@ -57,14 +57,14 @@
         Content="4" 
         FontSize="22" 
         FontWeight="Bold" 
-        Click="NumBtn_Click"/>
+        Click="NumBtn_Click" Background="#FFCEA0FD"/>
 
         <Button x:Name="FiveBtn"
         Grid.Row="2"
         Content="5" 
         FontSize="22" 
         FontWeight="Bold" 
-        Click="NumBtn_Click" Grid.Column="1"/>
+        Click="NumBtn_Click" Grid.Column="1" Background="#FFCEA0FD"/>
 
         <Button x:Name="SixBtn"
         Grid.Row="2"
@@ -72,7 +72,7 @@
         Content="6" 
         FontSize="22" 
         FontWeight="Bold" 
-        Click="NumBtn_Click"/>
+        Click="NumBtn_Click" Background="#FFCEA0FD"/>
 
         <Button x:Name="OneBtn"
         Grid.Row="3"
@@ -80,14 +80,14 @@
         Content="1" 
         FontSize="22" 
         FontWeight="Bold" 
-        Click="NumBtn_Click"/>
+        Click="NumBtn_Click" Background="#FFB47EEC"/>
 
         <Button x:Name="TwoBtn"
         Grid.Row="3"
         Content="2" 
         FontSize="22" 
         FontWeight="Bold" 
-        Click="NumBtn_Click" Grid.Column="1"/>
+        Click="NumBtn_Click" Grid.Column="1" Background="#FFB47EEC"/>
 
         <Button x:Name="ThreeBtn"
         Grid.Row="3"
@@ -95,14 +95,14 @@
         Content="3" 
         FontSize="22" 
         FontWeight="Bold" 
-        Click="NumBtn_Click"/>
+        Click="NumBtn_Click" Background="#FFB47EEC"/>
 
         <Button x:Name="ZeroBtn"
         Grid.Row="4"
         Content="0" 
         FontSize="22" 
         FontWeight="Bold" 
-        Click="NumBtn_Click" Grid.Column="1"/>
+        Click="NumBtn_Click" Grid.Column="1" Background="#FF9560CC"/>
 
         <Button x:Name="PlusBtn"
         Grid.Row="4"
@@ -110,7 +110,7 @@
         Content="+" 
         FontSize="22" 
         FontWeight="Bold" 
-        Click="PlusBtn_Click"/>
+        Click="PlusBtn_Click" Background="#FFBAFFBE"/>
 
         <Button x:Name="MinusBtn"
          Grid.Row="3"
@@ -118,15 +118,15 @@
          Content="-" 
          FontSize="22" 
          FontWeight="Bold" 
-         Click="MinusBtn_Click"/>
+         Click="MinusBtn_Click" Background="#FFBAFFBE"/>
 
-        <Button x:Name="TimesBtn"
+        <Button x:Name="MultiplyBtn"
          Grid.Row="2"
          Grid.Column="3"
          Content="x" 
          FontSize="22" 
          FontWeight="Bold" 
-         Click="NumBtn_Click" BorderBrush="#FFBBBBBB"/>
+         Click="MultiplyBtn_Click" Background="#FFBAFFBE" />
 
         <Button x:Name="DivideBtn"
          Grid.Row="1"
@@ -134,7 +134,7 @@
          Content="÷" 
          FontSize="22" 
          FontWeight="Bold" 
-         Click="NumBtn_Click"/>
+         Click="DivideBtn_Click" Background="#FFBAFFBE"/>
 
         <Button x:Name="EqualsBtn"
         Grid.Row="4"
@@ -142,7 +142,7 @@
         Content="=" 
         FontSize="22" 
         FontWeight="Bold" 
-        Click="EqualsBtn_Click"/>
+        Click="EqualsBtn_Click" Background="#FFBAFFBE"/>
 
         <Button  x:Name="ClearBtn"
                 Content="C"
@@ -150,7 +150,7 @@
                 Grid.Row="4" VerticalAlignment="Center"
                 Height="70"
                 Width="66"
-                Click="ClearBtn_Click"
+                Click="ClearBtn_Click" Background="#FFF1F790"
                 FontSize="22" 
                 FontWeight="Bold"/>
 
@@ -160,7 +160,15 @@
                 Content="√" 
                 FontSize="22" 
                 FontWeight="Bold" 
-                Click="NumBtn_Click"/>
+                Click="RootBtn_Click" Background="#FFA6E6A9"/>
+
+        <Button x:Name="PwBtn"
+        Grid.Row="2"
+        Grid.Column="4"
+        Content="^" 
+        FontSize="22" 
+        FontWeight="Bold" 
+        Click="PwBtn_Click" Background="#FFA6E6A9"/>
 
         <Label 
            x:Name="OutputText" 
@@ -171,7 +179,8 @@
             FontSize="36"
             HorizontalAlignment="Right" VerticalAlignment="Bottom"
             />
-        
+        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Grid.Row="5" VerticalAlignment="Top" RenderTransformOrigin="0.307,0.376" Width="92" Grid.ColumnSpan="2"/>
+
 
 
     </Grid>
